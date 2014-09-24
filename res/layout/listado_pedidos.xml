@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondodanbo30" >
+
+    <TextView
+        android:id="@+id/LBLTITLISTADOPEDIDS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="39dp"
+        android:text="LISTA DE PEDIDOS"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/LSTVIEWPEDIDOESTADS"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignLeft="@+id/LBLTITLISTADOPEDIDS"
+        android:layout_below="@+id/LBLTITLISTADOPEDIDS"
+        android:layout_marginTop="66dp" >
+    </ListView>
+
+</RelativeLayout>

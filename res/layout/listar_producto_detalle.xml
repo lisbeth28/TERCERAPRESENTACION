@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/BTNLSTPBUSCARPROD"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TXTLSPDatoBuscar"
+            android:layout_alignBottom="@+id/TXTLSPDatoBuscar"
+            android:layout_toRightOf="@+id/TXTLSPDatoBuscar"
+            android:onClick="buscar"
+            android:text="BUSCAR" />
+
+        <EditText
+            android:id="@+id/TXTLSPDatoBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="29dp"
+            android:layout_marginLeft="25dp"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <ListView
+            android:id="@+id/LSTVPRODUCTOS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/BTNLSTPBUSCARPROD"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="30dp" >
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="663dp"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/LBLPRODTITULO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="29dp"
+            android:text="TITULO PRODUCTO"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/IMGVPRODUCTO"
+            android:layout_width="120dp"
+            android:layout_height="200dp"
+            android:layout_alignLeft="@+id/LBLPRODTITULO"
+            android:layout_below="@+id/LBLPRODTITULO"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/LBLPRODCARACT"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignTop="@+id/IMGVPRODUCTO"
+            android:layout_marginLeft="46dp"
+            android:layout_toRightOf="@+id/IMGVPRODUCTO"
+            android:text="CARACTERISTICAS"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/LBLPRODMARCA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LBLPRODCARACT"
+            android:layout_below="@+id/LBLPRODCARACT"
+            android:layout_marginTop="27dp"
+            android:text="MARCA REFERIDA"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/LBLPRODCATG"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_alignLeft="@+id/LBLPRODMARCA"
+            android:layout_below="@+id/LBLPRODMARCA"
+            android:layout_marginTop="23dp"
+            android:text="CATEGORIA"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/LBLPRODUNID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LBLPRODCATG"
+            android:layout_centerVertical="true"
+            android:text="UNIDAD"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/LBLPRODPRECIO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/IMGVPRODUCTO"
+            android:layout_alignLeft="@+id/LBLPRODUNID"
+            android:text="PRECIO"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/LBLPRODSTOCK"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LBLPRODPRECIO"
+            android:layout_marginTop="26dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondodanbo19" >
+
+    <EditText
+        android:id="@+id/TXTRAZCJ"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginLeft="43dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/TXTRUCJ"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/TXTRAZCJ"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/TXTDIRECCIONCJ"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/TXTRAZCJ"
+        android:ems="10" >
+    </EditText>
+
+    <Spinner
+        android:id="@+id/SPNDISTRITOCJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/TXTRAZCJ"
+        android:layout_alignRight="@+id/TXTDIRECCIONCJ" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="36dp"
+        android:text="DIRECCIÓN"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="64dp"
+        android:text="DISTRITO"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="37dp"
+        android:text="TELEFONO"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/TXTTELEFONOCJ"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/TXTDIRECCIONCJ"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/TXTPAGINACJ"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/TXTTELEFONOCJ"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="37dp"
+        android:text="CONTACTO"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/TXTCONTACTOCJ"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignLeft="@+id/TXTPAGINACJ"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="39dp"
+        android:text="PAGINA"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/TXTRUCJ"
+        android:layout_marginTop="41dp"
+        android:text="RAZON SOCIAL"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/LBLTITULOCLIENTEJURID"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/textView6"
+        android:text="CLIENTE JUR"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LBLTITULOCLIENTEJURID"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="52dp"
+        android:text="RUC"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

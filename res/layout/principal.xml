@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondodanbo02"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Principal" >
+
+    <TextView
+        android:id="@+id/LBLPASSWRD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LBLUSUARIO"
+        android:layout_below="@+id/LBLUSUARIO"
+        android:layout_marginTop="44dp"
+        android:text="CONTRASEÑA :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/TXTPASS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/LBLPASSWRD"
+        android:layout_alignLeft="@+id/TXTUSER"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/blanco" />
+
+    <Button
+        android:id="@+id/BTNCERRAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BTNLOGIN"
+        android:layout_alignBottom="@+id/BTNLOGIN"
+        android:layout_alignLeft="@+id/TXTPASS"
+        android:layout_marginLeft="68dp"
+        android:text="SALIR"
+        android:textColor="@color/blanco"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/TXTUSER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/LBLUSUARIO"
+        android:layout_alignBottom="@+id/LBLUSUARIO"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="86dp"
+        android:ems="10"
+        android:textColor="@color/blanco" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/LBLTITULO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:text="INICIAR SESIÓN"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blanco"
+        android:textSize="49sp" />
+
+    <TextView
+        android:id="@+id/LBLUSUARIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/BTNLOGIN"
+        android:layout_below="@+id/LBLTITULO"
+        android:layout_marginRight="51dp"
+        android:layout_marginTop="61dp"
+        android:text="USUARIO      :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/BTNLOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LBLPASSWRD"
+        android:layout_marginTop="58dp"
+        android:layout_toLeftOf="@+id/BTNCERRAR"
+        android:text="INGRESAR"
+        android:textColor="@color/blanco"
+        android:textSize="28sp" />
+
+</RelativeLayout>

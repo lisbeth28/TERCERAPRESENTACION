@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Proyecto</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+     <color name="blanco">#FFFFFF</color>
+     <color name="verdeoscuro">#1A9403</color> 
+     <color name="grisoscuro">#474746</color>
+     <color name="gris">#F5F5F5</color>
+     <color name="verdeclaro">#6AB957</color>
+     <color name="marron">#6B4E02</color>
+       
+</resources>

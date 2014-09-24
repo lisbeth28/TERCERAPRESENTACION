@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TXTListaNombreCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TXTListaDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aa"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gris"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/TXTListaDireccionCN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aaaaaaaaaaaaaaaaaa"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/gris"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/TXTListaTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/gris"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/TXTListaCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:text="aaaaaaaaaaaaa"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gris"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+</LinearLayout>

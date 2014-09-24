@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondopedido" >
+
+    <TextView
+        android:id="@+id/LBLDETALLEPEDIDO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="38dp"
+        android:text="NUEVO PEDIDO"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/NPEDIDOCLIENTE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LBLDETALLEPEDIDO"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="31dp"
+        android:text="CLIENTE"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/TXTNPCLIENTE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NPEDIDOCLIENTE"
+        android:layout_alignBottom="@+id/NPEDIDOCLIENTE"
+        android:layout_alignLeft="@+id/LBLDETALLEPEDIDO"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/LBLNPFECHA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/NPEDIDOCLIENTE"
+        android:layout_below="@+id/TXTNPCLIENTE"
+        android:layout_marginTop="52dp"
+        android:text="FECHA"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/LBLNPPRODUCTO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/LBLNPFECHA"
+        android:layout_below="@+id/LBLNPFECHA"
+        android:layout_marginTop="26dp"
+        android:text="PRODUCTO"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/TXTNPPRODUCTO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/LBLNPPRODUCTO"
+        android:layout_alignLeft="@+id/TXTNPCLIENTE"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/TXTNPCANTIDAD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/LBLNPCANTIDAD"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/BTNAGREGARDETALLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TXTNPCANTIDAD"
+        android:layout_alignBottom="@+id/TXTNPCANTIDAD"
+        android:layout_marginLeft="41dp"
+        android:layout_toRightOf="@+id/TXTNPCANTIDAD"
+        android:text="+" />
+
+    <ListView
+        android:id="@+id/LISTVIEWDPEDIDO"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignLeft="@+id/LBLNPCANTIDAD"
+        android:layout_below="@+id/BTNAGREGARDETALLE"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="53dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/LBLNPCANTIDAD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/LBLNPPRODUCTO"
+        android:layout_below="@+id/LBLNPPRODUCTO"
+        android:layout_marginTop="44dp"
+        android:text="CANTIDAD"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/LBLFECHASOLICITAD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/LBLNPFECHA"
+        android:layout_alignLeft="@+id/TXTNPPRODUCTO"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/titulo1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LISTVIEWDPEDIDO"
+        android:layout_below="@+id/BTNAGREGARDETALLE"
+        android:layout_marginTop="23dp"
+        android:text="CODIGO" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/titulo1"
+        android:layout_alignBottom="@+id/titulo1"
+        android:layout_toRightOf="@+id/titulo1"
+        android:text="UNID" />
+
+    <TextView
+        android:id="@+id/titulo3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/titulo2"
+        android:layout_alignRight="@+id/TXTNPPRODUCTO"
+        android:text="CANT" />
+
+    <TextView
+        android:id="@+id/titulo4"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/titulo3"
+        android:layout_alignBottom="@+id/titulo3"
+        android:text="PRECIO" />
+
+    <TextView
+        android:id="@+id/titulo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/titulo4"
+        android:layout_alignLeft="@+id/BTNAGREGARDETALLE"
+        android:text="SUBTOTAL" />
+
+    <TextView
+        android:id="@+id/lblobservacioneped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LBLNPFECHA"
+        android:layout_below="@+id/LISTVIEWDPEDIDO"
+        android:layout_marginTop="38dp"
+        android:text="OBSERVACIONES :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/TXTOBESRVACIONESPED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LBLNPCANTIDAD"
+        android:layout_below="@+id/lblobservacioneped"
+        android:layout_marginTop="29dp"
+        android:ems="10" />
+
+    <ImageButton
+        android:id="@+id/BTIMGValidar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/TXTNPCLIENTE"
+        android:layout_toRightOf="@+id/TXTNPCANTIDAD"
+        android:src="@drawable/okicon" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/LBLNPCANTIDAD"
+        android:layout_toRightOf="@+id/titulo5"
+        android:src="@drawable/add_icon" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/opciones_sincro"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_action_refresh"
+        android:title=" Sincronizar "/>
+ <item
+        android:id="@+id/opciones_regresar"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_action_undo"
+        android:title=" Regresar "/>
+</menu>
